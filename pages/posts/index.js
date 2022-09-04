@@ -1,8 +1,9 @@
 import React from "react";
 import Link from "next/link";
-import CTA from "./posts/cta";
+import CTA from "./cta";
 import Image from "next/image";
-import vic3 from "../public/images/vic3.png";
+// import vic3 from "../public/images/vic3.png";
+import vic3 from "../../public/images/vic3.png"
 
 const Header = () => {
   return (
@@ -17,9 +18,10 @@ const Header = () => {
         </h5>
         <CTA />
         <div>
-          <Image src={vic3} alt="Me" />
+          <Image src={vic3} alt="Me" className="" />
         </div>
 
+        
         <h5 className="absolute right-[-1.3rem] font-medium py-1 px-10 rotate-90 insert-x-0 bottom-[10rem] text-lg text-white/50">
           <Link href="#"> scroll down </Link>
         </h5>
